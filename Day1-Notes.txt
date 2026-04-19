@@ -1,0 +1,16 @@
+DAY 1 - NETWORKING BASICS
+
+1. Network:
+A network is a group of connected devices that share data.
+
+2. LAN:
+Local Area Network - covers small area like home, school.
+
+3. WAN:
+Wide Area Network - covers large area like internet.
+
+4. Switch:
+A switch connects multiple devices in a LAN and allows communication.
+
+5. Ping:
+Ping is used to check connectivity between two devices.
