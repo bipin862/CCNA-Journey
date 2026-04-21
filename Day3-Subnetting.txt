@@ -1,0 +1,103 @@
+DAY 3 - SUBNETTING
+
+1. Subnetting:
+Subnetting is the process of dividing a large network into smaller networks (subnets).
+It helps improve network performance, security, and management.
+
+--------------------------------------------------
+
+2. IP Address Structure:
+An IP address has two parts:
+- Network part → identifies the network
+- Host part → identifies the device
+
+Example:
+192.168.1.10
+Network: 192.168.1
+Host: 10
+
+--------------------------------------------------
+
+3. Subnet Mask:
+Subnet mask defines which part of IP is network and host.
+
+Examples:
+- /24 = 255.255.255.0
+- /25 = 255.255.255.128
+- /26 = 255.255.255.192
+- /27 = 255.255.255.224
+- /28 = 255.255.255.240
+
+--------------------------------------------------
+
+4. Block Size Formula:
+Block size = 256 − subnet value
+
+Example:
+/26 → 256 − 192 = 64
+/28 → 256 − 240 = 16
+
+--------------------------------------------------
+
+5. Host Formula:
+Number of hosts = 2^n − 2
+(where n = number of host bits)
+
+Example:
+/26 → 2^6 − 2 = 62 hosts
+
+--------------------------------------------------
+
+6. Important Terms:
+
+- Network Address → first IP (not usable)
+- Broadcast Address → last IP (not usable)
+- Usable Range → between network and broadcast
+
+--------------------------------------------------
+
+7. Example 1:
+
+Network: 192.168.1.0/26
+
+Block size = 64
+
+Subnets:
+1. 192.168.1.0 → 1 – 62 → Broadcast: 63
+2. 192.168.1.64 → 65 – 126 → Broadcast: 127
+3. 192.168.1.128 → 129 – 190 → Broadcast: 191
+4. 192.168.1.192 → 193 – 254 → Broadcast: 255
+
+--------------------------------------------------
+
+8. Example 2:
+
+Network: 192.168.1.0/28
+
+Block size = 16
+
+Subnets:
+1. 192.168.1.0 → 1 – 14 → Broadcast: 15
+2. 192.168.1.16 → 17 – 30 → Broadcast: 31
+
+--------------------------------------------------
+
+9. Key Concepts:
+
+- Network = first address
+- Broadcast = last address
+- First host = network + 1
+- Last host = broadcast − 1
+
+--------------------------------------------------
+
+10. Real-world Use:
+
+- Dividing networks in companies (departments)
+- Improving security and performance
+- Used in routers and VLANs
+
+--------------------------------------------------
+
+Conclusion:
+Subnetting is essential for efficient network design and is one of the most important skills in networking and CCNA.
