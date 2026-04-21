@@ -1,0 +1,67 @@
+DAY 2 - OSI MODEL & TCP/IP MODEL
+
+1. OSI Model:
+The OSI Model is a 7-layer conceptual model that explains how data travels from one device to another in a network.
+Each layer has a specific function like communication, addressing, and transmission.
+
+Layers of OSI:
+1. Application – User interaction (apps like browser, WhatsApp)
+2. Presentation – Data formatting, encryption
+3. Session – Establishes and manages connection
+4. Transport – Breaks data into segments, uses ports (TCP/UDP)
+5. Network – Uses IP address for routing
+6. Data Link – Uses MAC address, works with switches
+7. Physical – Sends data as electrical signals
+
+--------------------------------------------------
+
+2. TCP/IP Model:
+The TCP/IP model is a 4-layer practical model used in real-world internet communication.
+It defines how data is transmitted, routed, and received using protocols like TCP and IP.
+
+Layers of TCP/IP:
+1. Application – Combines OSI top layers (Application, Presentation, Session)
+2. Transport – Uses TCP/UDP, handles ports and delivery
+3. Internet – Uses IP addressing and routing
+4. Network Access – Handles MAC and physical transmission
+
+--------------------------------------------------
+
+3. OSI vs TCP/IP:
+
+OSI:
+- 7 layers
+- Theoretical model
+- Used for learning
+
+TCP/IP:
+- 4 layers
+- Practical model
+- Used in real networks
+
+--------------------------------------------------
+
+4. Key Concepts:
+
+- IP Address works at Network Layer
+- Port number works at Transport Layer
+- MAC Address works at Data Link Layer
+- Physical Layer sends signals
+
+--------------------------------------------------
+
+5. Real-life Example:
+
+When sending a message (e.g., "Hi" on WhatsApp):
+- Application layer creates message
+- Transport layer adds port and splits data
+- Network layer adds IP address
+- Data Link layer adds MAC address
+- Physical layer sends signals
+
+At receiver side, data is processed in reverse order and message is displayed.
+
+--------------------------------------------------
+
+Conclusion:
+OSI model helps us understand how data flows step-by-step, while TCP/IP is used in real-world networking.
