@@ -1,0 +1,36 @@
+Given:
+192.168.1.0/28
+Step 1: Subnet mask
+
+/28 = 255.255.255.240
+
+Step 2: Block size
+
+ Formula:
+
+256 − 240 = 16
+
+block size = 16
+
+Step 3: Total subnets
+
+ /24 → /28 = borrowed 4 bits
+
+2^4 = 16
+
+
+📦 Subnet Details
+🟢 Subnet 1 
+Network: 192.168.1.0
+Range: 192.168.1.1 – 192.168.1.14 
+Broadcast: 192.168.1.15 
+
+✔ This is 100% correct
+
+🟡 Subnet 2 
+
+👉 Add block size (16):
+
+Network: 192.168.1.16
+Range: 192.168.1.17 – 192.168.1.30
+Broadcast: 192.168.1.31
